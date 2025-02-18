@@ -68,7 +68,7 @@ Please use each repo for its appropriate use:
 + WeGotBoard-back for all admin-side only features (so the API and DB itself)
 + WeGotBoard-PM for all contributor issues related to Project Management (setting up repos, sprints, raw documentation, ...)
 
-Combined with using the right repo, also tag the repo in the "Project Side" tags for easier filtering later on if needed.
+Combined with using the right repo, also tag the repo in the "Project Side" tags for easier filtering later on if needed.  
 ![Project Side tutorial image](images/rules-tag-projectside.png)
 
 ### Epics
