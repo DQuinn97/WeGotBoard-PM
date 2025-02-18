@@ -74,8 +74,7 @@ Combined with using the right repo, also tag the repo in the "Project Side" tags
 ### Epics
 
 An **epic** describes multiple (larger) features that form one unit (like a full webpage).
-The epic needs to be created on the appropriate repo.  
-Each epic needs to be named `EPIC_<feature name>` (spaces allowed, branches will automatically be hyphenated). e.g. `EPIC_Landing Page`   
+The epic needs to be created on the appropriate repo.    
 Each epic needs to be divided into sub-issues that each form one singular user-story (details in [User-Stories](#user-stories)).   
 
 Please also mark epics with the right tag under "Card Type", it does not need a "Card Type 2":  
@@ -91,5 +90,23 @@ Each story has one function and one function only, if it does multiple things, i
 User-stories need a "[Story Points](#story-points)" *(and optionally a "[Priority](#priority)")*, a "[Project Side](#project-side)", a "[Card Type](#card-type)" and "[Card Type 2](#card-type-2)" tag.  
 ![User-Stories tutorial image](images/rules-tags-user-stories.png) *(usage for each of these tags is listed in [Tags](#tags))*
 
+### Bugs and Hotfixes
 
-TBC...
+A **bug** is a regular feature one of the collaborators is working on but got stuck. If a card got marked as a bug using the appropriate "[Card Type](#card-type)", another collaborator is invited to create a sub-issue with the **hotfix** tag.  
+A **hotfix** is only ever created as a response to a bug.
+
+### Naming Cards
+
+All cards/issues must start with "wgb", followed by the card type specific naming convention specified below.  
+Names are allowed to have spaces, git will automatically truncate this for branches. Git will also automatically generate a ticket ID per repo, so that can be ignored in the creation of the card. Do not change the automatically generated name of each branch, changing it may cause confusion.  
++ Epics : `wgb EPIC_<page name / issue collection name>`
++ Feature : `wgb_<feature name>`
++ Bug : not named, just a tag. This is already an existing branch / issue.
++ Hotfix : `wgb HF_<parent issue name>`
+
+### Branching
+
+***Do not develop on main, main is only ever to be used to merge finished epics / features / hotfixes.***
++ Epics : branch off from main
++ Features : branch off from their parent epic or main if not applicable
++ Hotfixes : branch off from their parent issue
