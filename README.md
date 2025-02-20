@@ -99,10 +99,10 @@ A **hotfix** is only ever created as a response to a bug.
 
 All cards/issues must start with "wgb", followed by the card type specific naming convention specified below.  
 Names are allowed to have spaces, git will automatically truncate this for branches. Git will also automatically generate a ticket ID per repo, so that can be ignored in the creation of the card. Do not change the automatically generated name of each branch, changing it may cause confusion.  
-+ Epics : `wgb EPIC_<page name / issue collection name>`
-+ Feature : `wgb_<feature name>`
++ Epics : `wgb EPIC <page name / issue collection name>`
++ Feature : `wgb <feature name>`
 + Bug : not named, just a tag. This is already an existing branch / issue.
-+ Hotfix : `wgb HF_<parent issue name>`
++ Hotfix : `wgb <parent issue name> HF`
 
 ### Branching
 
